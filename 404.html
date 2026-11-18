@@ -3,22 +3,38 @@
 <header><a href="/"><div class="k" id="k"></div><h1 id="t">Tai Chi sur Chaise</h1></a></header>
 <main id="m"></main>
 <script>
-var D=[["Rotation douce de la nuque", "Nuque et épaules"], ["Inclinaison de la tête", "Nuque et épaules"], ["Le « oui » lent", "Nuque et épaules"], ["Cercles d'épaules", "Nuque et épaules"], ["Hausser et relâcher", "Nuque et épaules"], ["Ouvrir la poitrine", "Nuque et épaules"], ["Porter le ciel", "Nuque et épaules"], ["Cercles de poignets", "Bras, poignets et mains"], ["Ouvrir et fermer les mains", "Bras, poignets et mains"], ["Le pouce voyageur", "Bras, poignets et mains"], ["Mains de nuage", "Bras, poignets et mains"], ["Repousser la vague", "Bras, poignets et mains"], ["Tendre l'arc", "Bras, poignets et mains"], ["Rotation du buste", "Dos et buste"], ["Inclinaison du buste", "Dos et buste"], ["Dos rond, dos long", "Dos et buste"], ["Le pendule", "Dos et buste"], ["Regarder derrière soi", "Dos et buste"], ["Séparer le ciel et la terre", "Dos et buste"], ["Glisser vers les genoux", "Dos et buste"], ["Lever les talons", "Hanches et jambes"], ["Lever les pointes", "Hanches et jambes"], ["Cercles de chevilles", "Hanches et jambes"], ["Tendre la jambe", "Hanches et jambes"], ["La marche assise", "Hanches et jambes"], ["Ouvrir les genoux", "Hanches et jambes"], ["Glisser le pied", "Hanches et jambes"], ["Le transfert du poids", "Équilibre et coordination"], ["Se préparer à se lever", "Équilibre et coordination"], ["Se lever et s'asseoir", "Équilibre et coordination"], ["Bras et jambe opposés", "Équilibre et coordination"], ["La grue assise", "Équilibre et coordination"], ["Tendre la main", "Équilibre et coordination"], ["L'accordéon", "Respiration et calme"], ["La boule d'énergie", "Respiration et calme"], ["La vague", "Respiration et calme"], ["Réchauffer les yeux", "Respiration et calme"], ["Tapotements doux", "Respiration et calme"], ["Respiration cœur-ventre", "Respiration et calme"], ["La fermeture", "Respiration et calme"]];
-var n=parseInt(location.pathname.replace(/^\/+|\/+$/g,''),10);
+var DFR=[["Rotation douce de la nuque", "Nuque et épaules"], ["Inclinaison de la tête", "Nuque et épaules"], ["Le « oui » lent", "Nuque et épaules"], ["Cercles d'épaules", "Nuque et épaules"], ["Hausser et relâcher", "Nuque et épaules"], ["Ouvrir la poitrine", "Nuque et épaules"], ["Porter le ciel", "Nuque et épaules"], ["Cercles de poignets", "Bras, poignets et mains"], ["Ouvrir et fermer les mains", "Bras, poignets et mains"], ["Le pouce voyageur", "Bras, poignets et mains"], ["Mains de nuage", "Bras, poignets et mains"], ["Repousser la vague", "Bras, poignets et mains"], ["Tendre l'arc", "Bras, poignets et mains"], ["Rotation du buste", "Dos et buste"], ["Inclinaison du buste", "Dos et buste"], ["Dos rond, dos long", "Dos et buste"], ["Le pendule", "Dos et buste"], ["Regarder derrière soi", "Dos et buste"], ["Séparer le ciel et la terre", "Dos et buste"], ["Glisser vers les genoux", "Dos et buste"], ["Lever les talons", "Hanches et jambes"], ["Lever les pointes", "Hanches et jambes"], ["Cercles de chevilles", "Hanches et jambes"], ["Tendre la jambe", "Hanches et jambes"], ["La marche assise", "Hanches et jambes"], ["Ouvrir les genoux", "Hanches et jambes"], ["Glisser le pied", "Hanches et jambes"], ["Le transfert du poids", "Équilibre et coordination"], ["Se préparer à se lever", "Équilibre et coordination"], ["Se lever et s'asseoir", "Équilibre et coordination"], ["Bras et jambe opposés", "Équilibre et coordination"], ["La grue assise", "Équilibre et coordination"], ["Tendre la main", "Équilibre et coordination"], ["L'accordéon", "Respiration et calme"], ["La boule d'énergie", "Respiration et calme"], ["La vague", "Respiration et calme"], ["Réchauffer les yeux", "Respiration et calme"], ["Tapotements doux", "Respiration et calme"], ["Respiration cœur-ventre", "Respiration et calme"], ["La fermeture", "Respiration et calme"]];
+var DDE=[["Sanftes Nackendrehen", "Nacken und Schultern"], ["Kopf neigen", "Nacken und Schultern"], ["Das langsame „Ja“", "Nacken und Schultern"], ["Schulterkreisen", "Nacken und Schultern"], ["Hochziehen und loslassen", "Nacken und Schultern"], ["Den Brustkorb öffnen", "Nacken und Schultern"], ["Den Himmel tragen", "Nacken und Schultern"], ["Handgelenke kreisen", "Arme, Handgelenke und Hände"], ["Hände öffnen und schließen", "Arme, Handgelenke und Hände"], ["Der wandernde Daumen", "Arme, Handgelenke und Hände"], ["Wolkenhände", "Arme, Handgelenke und Hände"], ["Die Welle wegschieben", "Arme, Handgelenke und Hände"], ["Den Bogen spannen", "Arme, Handgelenke und Hände"], ["Oberkörper drehen", "Rücken und Oberkörper"], ["Seitneigung", "Rücken und Oberkörper"], ["Runder Rücken, langer Rücken", "Rücken und Oberkörper"], ["Das Pendel", "Rücken und Oberkörper"], ["Nach hinten schauen", "Rücken und Oberkörper"], ["Himmel und Erde trennen", "Rücken und Oberkörper"], ["Zu den Knien gleiten", "Rücken und Oberkörper"], ["Fersen heben", "Hüften und Beine"], ["Fußspitzen heben", "Hüften und Beine"], ["Fußgelenke kreisen", "Hüften und Beine"], ["Das Bein strecken", "Hüften und Beine"], ["Gehen im Sitzen", "Hüften und Beine"], ["Knie öffnen", "Hüften und Beine"], ["Den Fuß gleiten lassen", "Hüften und Beine"], ["Gewicht verlagern", "Gleichgewicht und Koordination"], ["Das Aufstehen vorbereiten", "Gleichgewicht und Koordination"], ["Aufstehen und Hinsetzen", "Gleichgewicht und Koordination"], ["Arm und Bein über Kreuz", "Gleichgewicht und Koordination"], ["Der sitzende Kranich", "Gleichgewicht und Koordination"], ["Die Hand ausstrecken", "Gleichgewicht und Koordination"], ["Das Akkordeon", "Atmung und Ruhe"], ["Die Energiekugel", "Atmung und Ruhe"], ["Die Welle", "Atmung und Ruhe"], ["Die Augen wärmen", "Atmung und Ruhe"], ["Sanftes Abklopfen", "Atmung und Ruhe"], ["Herz-Bauch-Atmung", "Atmung und Ruhe"], ["Der Abschluss", "Atmung und Ruhe"]];
+var path=location.pathname.replace(/^\/+|\/+$/g,'');
+var de=/^de(\/|$)/.test(path);
+var L=de?{D:DDE,pre:'/de',ex:'Übung',home:'/de/',title:'Tai Chi im Sitzen',
+ play:'Tippen Sie auf ▶, um das Video zu starten. Machen Sie den Ton lauter und stellen Sie Ihr Smartphone vor sich hin.',
+ note:'Hören Sie bei Schmerzen, Schwindel oder Unwohlsein sofort auf. Diese Videos ersetzen keinen ärztlichen Rat. Sprecherin: synthetische Stimme.',
+ list:'Alle 40 Videos',nf:'Seite nicht gefunden.'}
+ :{D:DFR,pre:'',ex:'Exercice',home:'/',title:'Tai Chi sur Chaise',
+ play:'Appuyez sur ▶ pour lancer la vidéo. Montez le son et posez votre téléphone devant vous.',
+ note:'Arrêtez-vous en cas de douleur, de vertige ou de malaise. Ces vidéos ne remplacent pas un avis médical. Narration : voix de synthèse.',
+ list:'Voir la liste des 40 vidéos',nf:'Page introuvable.'};
+if(de){document.documentElement.lang='de';document.getElementById('t').textContent=L.title;document.querySelector('header a').href='/de/';}
+var n=parseInt(de?path.slice(3):path,10);
 var m=document.getElementById('m');
 if(n>=1&&n<=40){
- var e=D[n-1], p=(n<10?'0':'')+n;
- document.title='Exercice '+n+' – '+e[0];
- document.getElementById('k').textContent='Exercice '+n+' · '+e[1];
+ var e=L.D[n-1], p=(n<10?'0':'')+n;
+ document.title=L.ex+' '+n+' – '+e[0];
+ document.getElementById('k').textContent=L.ex+' '+n+' · '+e[1];
  document.getElementById('t').textContent=e[0];
  var nav='';
- if(n>1) nav+='<a class="s" href="/'+(n-1)+'">← Exercice '+(n-1)+'</a>';
- if(n<40) nav+='<a href="/'+(n+1)+'">Exercice '+(n+1)+' →</a>';
- m.innerHTML='<video src="/ex'+p+'.mp4" controls playsinline preload="metadata"></video>'+
- '<p>Appuyez sur ▶ pour lancer la vidéo. Montez le son et posez votre téléphone devant vous.</p>'+
- '<div class="nav">'+nav+'</div>'+
- '<p class="note">Arrêtez-vous en cas de douleur, de vertige ou de malaise. Ces vidéos ne remplacent pas un avis médical. Narration : voix de synthèse.</p>';
+ if(n>1) nav+='<a class="s" href="'+L.pre+'/'+(n-1)+'">← '+L.ex+' '+(n-1)+'</a>';
+ if(n<40) nav+='<a href="'+L.pre+'/'+(n+1)+'">'+L.ex+' '+(n+1)+' →</a>';
+ m.innerHTML='<video src="'+L.pre+'/ex'+p+'.mp4" controls playsinline preload="metadata"></video>'+
+ '<p>'+L.play+'</p><div class="nav">'+nav+'</div><p class="note">'+L.note+'</p>';
+}else if(de){
+ document.title=L.title+' – Videos';
+ document.getElementById('k').textContent='40 Videos';
+ var h='<ol class="list">';
+ for(var i=0;i<40;i++) h+='<li><a href="/de/'+(i+1)+'">'+L.ex+' '+(i+1)+' · '+L.D[i][0]+'</a></li>';
+ m.innerHTML=h+'</ol>';
 }else{
- m.innerHTML='<p>Page introuvable. <a href="/">Voir la liste des 40 vidéos</a>.</p>';
+ m.innerHTML='<p>'+L.nf+' <a href="'+L.home+'">'+L.list+'</a>.</p>';
 }
 </script></body></html>
